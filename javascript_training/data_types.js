@@ -83,3 +83,80 @@ console.log(fruits[1]);
 console.log(fruitsandprices[5]);
 // print availability of the fruit 
 console.log(fruitpricesandavailablity[5]);
+
+//Function --> Represents a block of code designed to perform a particular task
+function launchTheApplication(brwoserName, URL){
+    console.log("Launch the browser: "+ brwoserName);
+    console.log("Navigate to the URL: "+ URL);
+    console.log("Application Launched successfully..!")
+}
+//call the functions
+launchTheApplication("Chrome","https://www.example.com");
+
+//Date ==> date represents date and time in javascript
+let currentDate = new Date();
+console.log(currentDate.getFullYear());
+console.log(currentDate.getMonth());
+
+//get current year currentDate variable .getfullyear
+console.log(currentDate.getFullYear());
+
+//get current month currentDate variable .getmonth
+console.log(currentDate.getMonth()+1);
+
+//get current date currentDate variable .getdate
+console.log(currentDate.getDate());
+
+//get current hours currentDate variable .gethours
+console.log(currentDate.getHours());
+
+
+//get current Minutes currentDate variable .getMinutes
+console.log(currentDate.getMinutes());
+
+
+//get current seconds currentDate variable .getseconds
+console.log(currentDate.getSeconds());
+
+//get current milliseconds since january 1, 1970
+console.log(currentDate.getMilliseconds());
+
+/* if(month ==1){
+    console.log(january);
+} */
+
+    // 5)Map===> Represents a collection of key-value pairs where keys can be of any data types.
+    //
+    let employeeMap = new Map();
+    employeeMap.set("empid",101);
+    employeeMap.set("empName","Surya");
+    employeeMap.set("Having visa",true);
+    employeeMap.set("empName","Reddy");
+    employeeMap.delete("Having Visa");
+    //Get employeee name
+    console.log(employeeMap.get("empName"));
+    console.log(employeeMap);
+    console.log(empdetails.size)
+
+    //6) set ==> set represents a collection of unique values of any date type
+
+    let uniqueNumbers =new Set();
+    uniqueNumbers.add(10);
+     uniqueNumbers.add(20);
+      uniqueNumbers.add(30);
+       uniqueNumbers.add(40);
+        uniqueNumbers.add(20);//duplicate value will not be added\
+        uniqueNumbers.delete(30);
+        console.log(uniqueNumbers.size);
+        console.log(uniqueNumbers);
+
+        //Symbol data type represents unique hidden value that you wanted to store 
+        let productmanfucturing = Symbol();
+        let productInfo ={
+            productName: "Oneplus 9",
+            productPrice: 69999,
+            [productmanfucturing]: "Chennai"
+        };
+        console.log(productInfo);
+
+
